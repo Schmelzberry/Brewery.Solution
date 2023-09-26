@@ -17,6 +17,14 @@ namespace Brewery.Controllers
     {
       return View();
     }
+    
+    [HttpPost("/items")]
+    public ActionResult Create(string description)
+    {
+      Item myItem = new Item(description);
+      return RedirectToAction("Index");
+    }
+  
 
   }
 }
