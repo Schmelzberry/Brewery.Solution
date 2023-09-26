@@ -10,9 +10,11 @@
       crossorigin="anonymous">
   </head>
   <body>
-    <h1>Welcome to PaulJake(cause fuck that guy) Brewery</h1>
-    <a href='/items/new'>Create a new Item</a>
-    <br>
-    <a href='/items'>See all available items</a>
+    <form action="/items" method="post">
+      
+      <!-- <label for="description">Add a new item</label>
+      <input id="description" name="description" type="text"> -->
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

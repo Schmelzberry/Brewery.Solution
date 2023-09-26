@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Brewery.Models;
 
-namespace Brewery.AddControllers
+namespace Brewery.Controllers
 {
 
-  public class HomeController : controller
+  public class HomeController : Controller
   {
     [HttpGet("/")]
     public ActionResult Index()
     {
       return View ();
     }
+
   }
 }
